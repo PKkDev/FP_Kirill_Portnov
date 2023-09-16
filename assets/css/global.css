@@ -2,14 +2,14 @@
     cursor: pointer;
 }
 
-.hovered-linck {
+.hovered-link {
     color: var(--text-color);
     text-decoration: none;
     cursor: pointer;
 }
 
 
-.hovered-linck:hover,
+.hovered-link:hover,
 .hovered:hover {
     /* fill: var(--background-color) !important; */
     /* color: var(--background-color); */

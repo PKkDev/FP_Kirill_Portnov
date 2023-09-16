@@ -13,48 +13,48 @@
      color: var(--text-color);
  }
 
- .footer-tab {
+ footer .footer-tab {
      position: relative;
  }
 
- .list-tab {
+ footer .list-tab {
      margin-left: auto;
  }
 
- .footer-tab .footer-logo {
+ footer .footer-tab .footer-logo {
      text-transform: uppercase;
      letter-spacing: 6px;
      font-size: 32px;
      font-weight: 700;
  }
 
- .footer-tab .footer-logo-text {
+ footer .footer-tab .footer-logo-text {
      font-size: 18px;
      font-weight: 700;
  }
 
- .footer-tab .footer-logo-info {
+ footer .footer-tab .footer-logo-info {
      position: absolute;
      bottom: 0;
      left: 0;
      opacity: 0.5;
  }
 
- .footer-tab h5 {
+ footer .footer-tab h5 {
      font-size: 24px;
      font-weight: 700;
      color: var(--accent-color);
      margin: 0;
  }
 
- .footer-tab ul {
+ footer .footer-tab ul {
      list-style-type: none;
      margin: 0;
      padding: 0;
      font-family: 'Gilroy', sans-serif;
  }
 
- .footer-tab ul li {
+ footer .footer-tab ul li {
      font-size: 18px;
      font-weight: 500;
      cursor: pointer;
