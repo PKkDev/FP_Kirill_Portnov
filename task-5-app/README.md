@@ -27,5 +27,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 <div style="display: flex; flex-direction:row; justify-content: flex-start">
-  <img  style="text-align: center;" src="https://raw.githubusercontent.com/PKkDev/">
+  <img  style="text-align: center;" src="https://github.com/PKkDev/FP_Kirill_Portnov/blob/Task-5/task-5-app/src/app/modules/calculator/ui.png">
+</div>
+
+<div style="display: flex; flex-direction:row; justify-content: flex-start">
+  <img  style="text-align: center;" src="https://github.com/PKkDev/FP_Kirill_Portnov/blob/Task-5/task-5-app/src/app/modules/db-view/ui-1.png">
+</div>
+
+<div style="display: flex; flex-direction:row; justify-content: flex-start">
+  <img  style="text-align: center;" src="https://github.com/PKkDev/FP_Kirill_Portnov/blob/Task-5/task-5-app/src/app/modules/db-view/ui-2.png">
+</div>
+
+<div style="display: flex; flex-direction:row; justify-content: flex-start">
+  <img  style="text-align: center;" src="https://github.com/PKkDev/FP_Kirill_Portnov/blob/Task-5/task-5-app/src/app/modules/db-view/ui-3.png">
 </div>
