@@ -1,0 +1,15 @@
+<ng-container *ngIf="control">
+
+    <compack-alert *ngIf="(viewError || control.touched || control.dirty) && control.hasError('required')" type="error"
+        [message]="'Обязательное поле'">
+    </compack-alert>
+
+    <compack-alert *ngIf="(viewError || control.touched || control.dirty) && control.hasError('pattern')" type="error"
+        [message]="template != undefined ?'Не соответствует шаблону: ' + template : 'Не соответствует шаблону'">
+    </compack-alert>
+
+    <compack-alert *ngIf="(viewError || control.touched || control.dirty) && control.hasError('mask')" type="error"
+        [message]="'Не соответствует шаблону: ' + control.getError('mask').requiredMask">
+    </compack-alert>
+
+</ng-container>

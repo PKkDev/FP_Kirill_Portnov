@@ -1,0 +1,24 @@
+@import 'assets/fonts/gilroy/stylesheet.css';
+
+@import 'assets/scss/variables.css';
+@import 'assets/scss/global.css';
+@import 'assets/scss/parallax.css';
+@import 'assets/scss/content.css';
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background-color: var(--background-color);
+    font-family: 'Chronicle Display', sans-serif;
+}
+
+.cmp-loading {
+    display: none !important;
+}
+
+.cmp-alert-body {
+    font-family: sans-serif;
+}
