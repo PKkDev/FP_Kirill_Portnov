@@ -1,0 +1,41 @@
+<form #form="ngForm" [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-item">
+        <label for="name">Имя: </label>
+        <input type="text" formControlName="firstName">
+        <app-validation-error [viewError]="viewError" [control]="feedbackForm.get('firstName')"></app-validation-error>
+    </div>
+
+    <div class="form-item">
+        <label for="name">Фамилия: </label>
+        <input type="text" formControlName="lastName">
+        <app-validation-error [viewError]="viewError" [control]="feedbackForm.get('lastName')"></app-validation-error>
+    </div>
+
+    <div class="form-item">
+        <label for="name">Почта: </label>
+        <input type="email" placeholder="test@test.ru" formControlName="email">
+        <app-validation-error [viewError]="viewError" [control]="feedbackForm.get('email')"
+            [template]="'test@test.ru'"></app-validation-error>
+    </div>
+
+    <div class="form-item">
+        <label for="name">Телефон: </label>
+        <input type="text" placeholder="+x(xxx)xx-xx-xxx" mask="+0 (000) 00-00-000" [validation]="true"
+            formControlName="phone">
+        <app-validation-error [viewError]="viewError" [control]="feedbackForm.get('phone')"></app-validation-error>
+    </div>
+
+    <div class="form-item">
+        <label for="name">Сообщение: </label>
+        <textarea formControlName="message"></textarea>
+        <app-validation-error [viewError]="viewError" [control]="feedbackForm.get('message')"></app-validation-error>
+    </div>
+
+    <div class="form-footer">
+        <button cmp-button type="submit" [loading]="feedbackForm.invalid">
+            Отправить
+        </button>
+    </div>
+
+</form>

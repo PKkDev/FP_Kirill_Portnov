@@ -1,0 +1,106 @@
+ .content {
+     min-height: 100vh;
+     padding: 50px 200px;
+
+     position: relative;
+     z-index: 2;
+     background: var(--background-color);
+
+     color: var(--text-color);
+     counter-reset: content-item 0;
+
+     background: linear-gradient(179deg, rgba(11, 29, 38, 0), 4%, var(--background-color) 7%);
+ }
+
+ /* .content::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 150px;
+     transform: translate(0px, -100%);
+     background: linear-gradient(180deg, rgba(11, 29, 38, 0), 20%, var(--background-color) 100%);
+ } */
+
+ .content-item {
+     display: flex;
+     flex-direction: row;
+     height: 720px;
+     margin-bottom: 200px;
+
+ }
+
+ .content-item-text-container {
+     position: relative;
+     padding: 150px 30px 150px 150px;
+ }
+
+ .content-item-text-container .content-item-text-container-title {
+     font-size: 64px;
+     font-weight: 600;
+     position: relative;
+ }
+
+ .content-item-text-container .content-item-text-container-title::before {
+     position: absolute;
+     top: -200px;
+     left: -100px;
+     counter-increment: content-item 1;
+     content: counter(content-item, decimal-leading-zero);
+
+     font-size: 240px;
+     font-weight: 700;
+     line-height: 240px;
+     opacity: .1;
+ }
+
+ .content-item-text-container .content-item-text-container-text {
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 36px;
+     font-family: 'Gilroy', sans-serif;
+ }
+
+
+ .content-item-text-container .content-item-text-container-open {
+     text-decoration: none;
+     cursor: pointer;
+     position: relative;
+     font-weight: 700;
+     font-size: 18px;
+     color: var(--accent-color);
+     font-family: 'Gilroy', sans-serif;
+ }
+
+ .content-item-text-container .content-item-text-container-open::after {
+     content: "\2192";
+     font-size: 30px;
+     left: 90px;
+     position: absolute;
+     top: -10px;
+ }
+
+ .content-item-image-container {
+     width: 100%;
+ }
+
+ .image {
+     background-position: top !important;
+     background-size: cover !important;
+     background-repeat: no-repeat !important;
+     width: 100%;
+     height: 100%;
+ }
+
+ .image-1 {
+     background: url(../images/body/01.png);
+ }
+
+ .image-2 {
+     background: url(../images/body/02.png);
+ }
+
+ .image-3 {
+     background: url(../images/body/03.png);
+ }

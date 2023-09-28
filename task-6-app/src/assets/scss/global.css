@@ -1,0 +1,35 @@
+.hovered {
+    cursor: pointer;
+}
+
+.hovered-link {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.hovered-link:hover,
+.hovered:hover {
+    /* fill: var(--background-color) !important; */
+    /* color: var(--background-color); */
+    opacity: .8;
+}
+
+.accent-label {
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--accent-color);
+    letter-spacing: 6px;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.accent-label::before {
+    width: 40px;
+    height: 2px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: var(--accent-color);
+    margin-right: 5px;
+}
