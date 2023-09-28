@@ -6,11 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## UI
+## Calculatro UI
  
 <div style="display: flex; flex-direction:row; justify-content: flex-start">
   <img  style="text-align: center;" src="https://github.com/PKkDev/FP_Kirill_Portnov/blob/Task-5/task-5-app/src/app/modules/calculator/ui.png">
 </div>
+
+## Data base UI
 
 <div style="display: flex; flex-direction:row; justify-content: flex-start">
   <img  style="text-align: center;" src="https://github.com/PKkDev/FP_Kirill_Portnov/blob/Task-5/task-5-app/src/app/modules/db-view/ui-1.png">
