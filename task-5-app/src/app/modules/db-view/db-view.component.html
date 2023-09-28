@@ -1,0 +1,51 @@
+<div class="tables-row">
+    <app-db-table-view [type]="1" [data]="countries" (selectionChange)="selectCountry($event)"></app-db-table-view>
+    <app-db-table-view [type]="2" [data]="countryInfo"></app-db-table-view>
+    <app-db-table-view [type]="3" [data]="trips" (selectionChange)="selectTrip($event)"></app-db-table-view>
+    <app-db-table-view [type]="4" [data]="personas" (selectionChange)="selectPersona($event)"></app-db-table-view>
+    <app-db-table-view [type]="5" [data]="hikers"></app-db-table-view>
+</div>
+
+<div class="tool">
+
+    <button cmp-button btnType="default" (click)="restoreData()">
+        Восстанвоить даныне
+    </button>
+
+</div>
+
+<div class="tool">
+
+    <button cmp-button btnType="default" (click)="onUpdateCountryName()">
+        Изменить название страны
+    </button>
+
+    <button cmp-button btnType="default" (click)="onUpdateCountryInfolang()">
+        Изменить язык страны
+    </button>
+
+</div>
+
+<div class="tool">
+
+    <button cmp-button btnType="default" (click)="onAddPersona()">
+        Добавить туриста
+    </button>
+
+    <button cmp-button btnType="default" (click)="onAddPersonaHiker()">
+        Добавить вещь активному туристу
+    </button>
+
+</div>
+
+<div class="tool">
+
+    <button cmp-button btnType="default" (click)="onDeletePersona()">
+        Удалить первого туриста
+    </button>
+
+    <button cmp-button btnType="default" (click)="onDeletePersonaHiker()">
+        Удалить первую вещь
+    </button>
+    
+</div>

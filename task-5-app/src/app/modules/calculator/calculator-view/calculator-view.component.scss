@@ -1,0 +1,86 @@
+.container {
+    width: 350px;
+    height: 450px;
+    background: #181818;
+
+    .input-container {
+        height: 25%;
+        padding: 5px;
+        box-sizing: border-box;
+
+        .input {
+            padding: 5px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background: rgba(36, 36, 36, 1);
+            color: #fff;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+
+            .expression {
+                height: 50%;
+                font-size: 18px;
+            }
+
+            .active {
+                height: 50%;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .board {
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .key {
+            width: 25%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+            background: rgba(87, 87, 87, 1);
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+            padding: 5px;
+            box-sizing: border-box;
+            background-clip: content-box;
+            user-select: none;
+
+            &:hover {
+                background: rgba(87, 87, 87, .5);
+                background-clip: content-box;
+            }
+        }
+
+        .op {
+            background: rgba(36, 36, 36, 1);
+            background-clip: content-box;
+
+            &:hover {
+                background: rgba(36, 36, 36, .5);
+                background-clip: content-box;
+            }
+        }
+
+        .ex {
+            width: 50%;
+            background: rgba(15, 108, 189, 1);
+            background-clip: content-box;
+
+            &:hover {
+                background: rgba(15, 108, 189, .5);
+                background-clip: content-box;
+            }
+        }
+    }
+}

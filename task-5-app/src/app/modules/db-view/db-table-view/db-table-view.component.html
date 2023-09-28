@@ -1,0 +1,21 @@
+<table>
+    <caption>{{title}}</caption>
+    <thead>
+        <tr>
+            <ng-container *ngFor="let column of columns">
+                <th>
+                    {{column}}
+                </th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of data" (click)="onSelect(row)">
+            <ng-container *ngFor="let column of columns">
+                <td>
+                    {{$any(row)[column]}}
+                </td>
+            </ng-container>
+        </tr>
+    </tbody>
+</table>

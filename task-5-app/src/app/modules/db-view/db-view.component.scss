@@ -1,0 +1,18 @@
+.tables-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.tool {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    button {
+        width: fit-content;
+    }
+}
