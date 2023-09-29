@@ -1,0 +1,189 @@
+.wrapper {
+    min-height: 100%;
+    overflow: auto;
+
+    counter-reset: content-item-2 0;
+}
+
+.parallax {
+    min-height: 100vh;
+}
+
+/*#region side */
+
+.parallax-side-body {
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+
+    z-index: 4;
+
+    padding: 200px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--text-color);
+    font-family: 'Gilroy', sans-serif;
+}
+
+.body-left {
+    left: 0;
+}
+
+.body-right {
+    right: 0;
+}
+
+.body-left {
+    width: fit-content;
+}
+
+.body-left .left-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transform-origin: left;
+    transform: rotate(90deg);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.body-right {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.body-right .item {
+    padding: 5px 15px 5px 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-right: medium solid rgba(255, 255, 255, .5);
+}
+
+.body-right .item:first-child {
+    border-right: medium solid rgba(255, 255, 255, 1) !important;
+}
+
+.body-right .counter {
+    counter-increment: content-item-2 1;
+}
+
+.body-right .counter::before {
+    content: counter(content-item-2, decimal-leading-zero);
+}
+
+.body-right .counter::after {
+    width: 5px;
+    height: 100%;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: var(--accent-color);
+    margin-right: 5px;
+}
+
+/*#endregion side */
+
+/*#region body */
+
+.parallax-body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+
+    background: linear-gradient(330deg, rgba(11, 29, 38, 0.00) 31.06%, var(--background-color) 108.93%);
+
+    color: var(--text-color);
+}
+
+.parallax-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 200px 20px;
+    position: relative;
+}
+
+.parallax-title {
+    margin: 0 0;
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-size: 88px;
+    font-weight: 600;
+}
+
+.parallax-sub-label {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.parallax-sub-label::after {
+    content: "\2193";
+    font-size: 30px;
+    left: 110px;
+    position: absolute;
+    top: -10px;
+}
+
+/*#endregion body */
+
+/*#region images */
+
+.paralax-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.paralax-images-item-cloud,
+.paralax-images-item-mountains,
+.paralax-images-item-human {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.paralax-images-item-cloud {
+    background: url(../back/cloud.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+.paralax-images-item-mountains {
+    background: url(../back/mountains.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 15%;
+    z-index: 2;
+}
+
+.paralax-images-item-human {
+    background: url(../back/human.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 35%;
+    z-index: 2;
+}
+
+@media (max-aspect-ratio: 3/2) {
+    .paralax-images-item-human {
+        background-position: 20% top;
+    }
+}
+
+/*#endregion images */
