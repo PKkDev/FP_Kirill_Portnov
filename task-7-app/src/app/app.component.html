@@ -1,0 +1,19 @@
+<div class="tool">
+    <input [(ngModel)]="city">
+    <button (click)="onStart()">Start</button>
+</div>
+
+<div *ngIf="isCityInfoLoading"> Загружается информация о городе </div>
+<div *ngIf="isCityWeatherLoading"> Загружается информация о погоде </div>
+<div *ngIf="isWeatherImageLoading"> Загружается картинка для погоды </div>
+<div *ngIf="errorMsg"> {{errorMsg}}</div>
+
+<div class="weather-block" *ngIf="weather">
+    <span> Погода: {{weather.description}}</span>
+    <span> Температура: {{weather.temp}}</span>
+    <span> Температура ощ.:{{weather.feelsLike}}</span>
+    <span> Влажность: {{weather.humidity}}</span>
+    <span> Скорость втера: {{weather.windSpeed}}</span>
+</div>
+
+<img *ngIf="weatherImage" [src]="weatherImage" alt="Weather image">
